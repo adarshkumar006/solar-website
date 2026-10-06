@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SolarPro | Get Free Solar Quote</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  >
+
+  <script src="js/theme.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Quote Section -->
+  <section class="quote-page">
+    <div class="container">
+
+      <div class="quote-box">
+
+        <div class="quote-heading">
+          <span>GET FREE QUOTE</span>
+          <h1>Get Your Solar Quote</h1>
+          <p>
+            Tell us about your requirement and get a customized
+            solar quote from our team.
+          </p>
+        </div>
+
+        <form id="quoteForm">
+
+          <div class="row g-3">
+
+            <div class="col-md-6">
+              <label>Full Name</label>
+              <input
+                type="text"
+                id="quoteName"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+              >
+            </div>
+
+            <div class="col-md-6">
+              <label>Phone Number</label>
+              <input
+                type="tel"
+                id="quotePhone"
+                class="form-control"
+                placeholder="Enter phone number"
+                required
+              >
+            </div>
+
+            <div class="col-md-6">
+              <label>Email</label>
+              <input
+                type="email"
+                id="quoteEmail"
+                class="form-control"
+                placeholder="Enter email"
+              >
+            </div>
+
+            <div class="col-md-6">
+              <label>Solar Type</label>
+              <select id="quoteType" class="form-select" required>
+                <option value="">Select Solar Type</option>
+                <option>Residential Solar</option>
+                <option>Commercial Solar</option>
+                <option>Industrial Solar</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label>Monthly Electricity Bill</label>
+              <input
+                type="number"
+                id="quoteBill"
+                class="form-control"
+                placeholder="e.g. 3000"
+              >
+            </div>
+
+            <div class="col-md-6">
+              <label>City</label>
+              <input
+                type="text"
+                id="quoteCity"
+                class="form-control"
+                placeholder="Enter your city"
+                required
+              >
+            </div>
+
+            <div class="col-12">
+              <label>Additional Requirement</label>
+              <textarea
+                id="quoteMessage"
+                class="form-control"
+                rows="4"
+                placeholder="Tell us anything else..."
+              ></textarea>
+            </div>
+
+            <div class="col-12 text-center">
+              <button type="submit" class="quote-btn">
+                Get Free Quote
+                <i class="bi bi-whatsapp"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="floating-contact-actions" aria-label="Quick contact">
+    <a class="floating-contact floating-contact-whatsapp"
+       href="https://wa.me/918417001391"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Chat with us on WhatsApp"
+       title="WhatsApp">
+      <i class="bi bi-whatsapp" aria-hidden="true"></i>
+    </a>
+    <a class="floating-contact floating-contact-call"
+       href="tel:+918417001391"
+       aria-label="Call us"
+       title="Call us">
+      <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <script>
+    document.getElementById("quoteForm").addEventListener("submit", function(e) {
+
+      e.preventDefault();
+
+      const name = document.getElementById("quoteName").value;
+      const phone = document.getElementById("quotePhone").value;
+      const email = document.getElementById("quoteEmail").value;
+      const type = document.getElementById("quoteType").value;
+      const bill = document.getElementById("quoteBill").value;
+      const city = document.getElementById("quoteCity").value;
+      const message = document.getElementById("quoteMessage").value;
+
+      const whatsappNumber = "918417001391";
+
+      const text = `Hello SolarPro,
+
+I want to get a free solar quote.
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Solar Type: ${type}
+Monthly Electricity Bill: ₹${bill}
+City: ${city}
+Additional Requirement: ${message}`;
+
+      const whatsappURL =
+        `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+      window.location.href = whatsappURL;
+    });
+  </script>
+
+</body>
+</html>

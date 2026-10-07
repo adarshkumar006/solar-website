@@ -296,9 +296,29 @@
 
 <section class="solar-hero">
 
+    <!-- BACKGROUND SLIDES -->
+    <div class="solar-slider">
+
+        <div class="solar-slide active"
+             style="background-image: url('images/img1.jpeg');"></div>
+
+        <div class="solar-slide"
+             style="background-image: url('images/hero1.jpg');"></div>
+
+        <div class="solar-slide"
+             style="background-image: url('images/hero2.jpg');"></div>
+
+        <div class="solar-slide"
+             style="background-image: url('images/hero3.jpg');"></div>
+
+    </div>
+
+    <!-- DARK OVERLAY -->
     <div class="hero-overlay"></div>
 
-    <div class="container position-relative">
+
+    <!-- FIXED CONTENT -->
+    <div class="container position-relative hero-content">
 
         <div class="row align-items-center min-vh-75">
 
@@ -343,23 +363,17 @@
 
                     <div class="trust-item">
                         <i class="bi bi-patch-check-fill"></i>
-                        <span>
-                            Quality Products
-                        </span>
+                        <span>Quality Products</span>
                     </div>
 
                     <div class="trust-item">
                         <i class="bi bi-shield-check"></i>
-                        <span>
-                            Long Warranty
-                        </span>
+                        <span>Long Warranty</span>
                     </div>
 
                     <div class="trust-item">
                         <i class="bi bi-headset"></i>
-                        <span>
-                            Expert Support
-                        </span>
+                        <span>Expert Support</span>
                     </div>
 
                 </div>
@@ -367,18 +381,15 @@
             </div>
 
 
-            <!-- RIGHT CONTENT -->
+            <!-- RIGHT SIDE -->
             <div class="col-lg-6 col-md-5">
 
                 <div class="hero-image-wrapper">
 
-                    <img
-                        src="images/img2.jpeg"
-                        alt="Solar Panel Installation"
-                        class="hero-image"
-                        style="border-radius: 10px;"
-                    >
-
+                    <div class="hero-image-box">
+                        <img src="images/solar2.jpg"
+                             alt="Solar Panel Installation">
+                    </div>
 
                     <!-- SAVINGS CARD -->
                     <div class="hero-floating-card savings-card">
@@ -415,6 +426,29 @@
             </div>
 
         </div>
+
+    </div>
+
+
+    <!-- SLIDER CONTROLS -->
+    <div class="slider-controls">
+
+        <button id="prevSlide">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+
+        <div class="slider-dots">
+
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+
+        </div>
+
+        <button id="nextSlide">
+            <i class="bi bi-chevron-right"></i>
+        </button>
 
     </div>
 
@@ -683,7 +717,7 @@
       <!-- Owner Image -->
       <div class="col-lg-5">
         <div class="founder-image">
-          <img src="images/owner.jpeg" alt="Founder">
+          <img src="images/owner1.jpeg" alt="Founder">
         </div>
       </div>
 
@@ -761,139 +795,474 @@
   </div>
 </section>
 
-<!-- products -->
+
+
+<!-- ==============================
+     PRODUCTS & SOLUTIONS
+================================= -->
 
 <section id="products" class="products-section">
-  <div class="container">
 
-    <div class="section-heading text-center">
-      <span>SOLAR PRODUCTS</span>
-      <h2>Our Solar Products</h2>
-      <p>Quality solar products designed for reliable and efficient energy.</p>
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="products-heading text-center">
+
+            <span class="section-label">
+                OUR PRODUCTS
+            </span>
+
+            <h2>
+                Complete Electric & Energy
+                <span>Solutions</span>
+            </h2>
+
+            <p>
+                From electric mobility to clean energy, we provide
+                reliable products designed for your everyday needs.
+            </p>
+
+        </div>
+
+
+        <!-- Product Cards -->
+        <div class="row g-4">
+
+
+            <!-- E-RICKSHAW -->
+            <div class="col-xl-3 col-lg-3 col-md-6">
+
+                <div class="solution-card">
+
+                    <div class="solution-image">
+
+                        <img
+                            src="images/e-rick1.jpg"
+                            alt="Electric Rickshaw"
+                        >
+
+                        <div class="image-overlay"></div>
+
+                        <div class="solution-icon">
+                            <i class="bi bi-truck"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="solution-content">
+
+                        <span class="solution-number">01</span>
+
+                        <h3>E-Rickshaw</h3>
+
+                        <p>
+                            Reliable and comfortable electric
+                            rickshaws for efficient daily transportation.
+                        </p>
+
+                        <a href="#contact" class="solution-btn">
+                            Explore
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- E-SCOOTY -->
+            <div class="col-xl-3 col-lg-3 col-md-6">
+
+                <div class="solution-card">
+
+                    <div class="solution-image">
+
+                        <img
+                            src="images/ev-scoot2.jpg"
+                            alt="Electric Scooty"
+                        >
+
+                        <div class="image-overlay"></div>
+
+                        <div class="solution-icon">
+                            <i class="bi bi-bicycle"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="solution-content">
+
+                        <span class="solution-number">02</span>
+
+                        <h3>Electric Scooty</h3>
+
+                        <p>
+                            Smart, stylish and eco-friendly electric
+                            scooters for modern everyday travel.
+                        </p>
+
+                        <a href="#contact" class="solution-btn">
+                            Explore
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BATTERY -->
+            <div class="col-xl-3 col-lg-3 col-md-6">
+
+                <div class="solution-card">
+
+                    <div class="solution-image">
+
+                        <img
+                            src="images/batt3.jpg"
+                            alt="Electric Battery"
+                        >
+
+                        <div class="image-overlay"></div>
+
+                        <div class="solution-icon">
+                            <i class="bi bi-battery-charging"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="solution-content">
+
+                        <span class="solution-number">03</span>
+
+                        <h3>Batteries</h3>
+
+                        <p>
+                            Long-lasting and dependable batteries
+                            for electric vehicles and power solutions.
+                        </p>
+
+                        <a href="#contact" class="solution-btn">
+                            Explore
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SOLAR -->
+            <div class="col-xl-3 col-lg-3 col-md-6">
+
+                <div class="solution-card">
+
+                    <div class="solution-image">
+
+                        <img
+                            src="images/solar1.jpg"
+                            alt="Solar Energy"
+                        >
+
+                        <div class="image-overlay"></div>
+
+                        <div class="solution-icon">
+                            <i class="bi bi-sun-fill"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="solution-content">
+
+                        <span class="solution-number">04</span>
+
+                        <h3>Solar Energy</h3>
+
+                        <p>
+                            Efficient solar energy solutions to reduce
+                            electricity costs and use clean energy.
+                        </p>
+
+                        <a href="#contact" class="solution-btn">
+                            Explore
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom CTA -->
+        <div class="products-bottom">
+
+            <div>
+                <h4>Looking for the right solution?</h4>
+
+                <p>
+                    Talk to our experts and find the best product for you.
+                </p>
+            </div>
+
+            <a href="#contact" class="products-cta-btn">
+                Get In Touch
+                <i class="bi bi-arrow-right"></i>
+            </a>
+
+        </div>
+
     </div>
 
-    <div class="row g-4">
-
-      <!-- Product 1 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="product-card">
-          <div class="product-icon">
-            <i class="bi bi-sun-fill"></i>
-          </div>
-          <h4>Solar Panels</h4>
-          <p>High-efficiency solar panels for homes and businesses.</p>
-          <a href="#contact">View Details <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <!-- Product 2 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="product-card">
-          <div class="product-icon">
-            <i class="bi bi-battery-charging"></i>
-          </div>
-          <h4>Solar Batteries</h4>
-          <p>Store solar energy and use it when you need it.</p>
-          <a href="#contact">View Details <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <!-- Product 3 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="product-card">
-          <div class="product-icon">
-            <i class="bi bi-lightning-charge-fill"></i>
-          </div>
-          <h4>Solar Inverters</h4>
-          <p>Reliable inverters for efficient solar power conversion.</p>
-          <a href="#contact">View Details <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <!-- Product 4 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="product-card">
-          <div class="product-icon">
-            <i class="bi bi-lightbulb-fill"></i>
-          </div>
-          <h4>Solar Lights</h4>
-          <p>Energy-saving solar lighting solutions for every space.</p>
-          <a href="#contact">View Details <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
-
-    </div>
-  </div>
 </section>
 
 <!-- services -->
 
+<!-- ==============================
+     SERVICES SECTION
+================================= -->
+
 <section id="services" class="services-section">
-  <div class="container">
 
-    <div class="section-heading text-center">
-      <span>OUR EXPERTISE</span>
-      <h2>Complete Solar Services</h2>
-      <p>
-        From planning to installation and maintenance, we handle your
-        complete solar journey.
-      </p>
+    <div class="container">
+
+        <!-- SECTION HEADING -->
+        <div class="services-heading text-center">
+
+            <span class="service-label">
+                OUR SERVICES
+            </span>
+
+            <h2>
+                Complete Solar & Battery
+                <span>Services</span>
+            </h2>
+
+            <p>
+                From installation to maintenance, we provide reliable
+                solar and battery services for homes and businesses.
+            </p>
+
+        </div>
+
+
+        <!-- FEATURED SERVICE -->
+        <div class="featured-service">
+
+            <!-- IMAGE -->
+            <div class="featured-image">
+
+                <img
+                    src="images/solar4.jpg"
+                    alt="Solar Panel Installation"
+                >
+
+                <div class="image-badge">
+                    <i class="bi bi-patch-check-fill"></i>
+                    Professional Service
+                </div>
+
+            </div>
+
+
+            <!-- CONTENT -->
+            <div class="featured-content">
+
+                <span class="service-small-title">
+                    SOLAR SOLUTIONS
+                </span>
+
+                <h3>
+                    Complete Solar Installation
+                    & Support
+                </h3>
+
+                <p>
+                    Get a complete solar solution from consultation
+                    and installation to maintenance and after-sales
+                    support.
+                </p>
+
+
+                <!-- SERVICE POINTS -->
+
+                <div class="service-points">
+
+                    <div class="service-point">
+
+                        <div class="point-icon">
+                            <i class="bi bi-sun-fill"></i>
+                        </div>
+
+                        <div>
+                            <h5>Solar Installation</h5>
+                            <p>
+                                Professional rooftop solar installation
+                                for homes and businesses.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-point">
+
+                        <div class="point-icon">
+                            <i class="bi bi-tools"></i>
+                        </div>
+
+                        <div>
+                            <h5>Repair & Maintenance</h5>
+                            <p>
+                                Regular maintenance and reliable
+                                repair support for your solar system.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-point">
+
+                        <div class="point-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+
+                        <div>
+                            <h5>After-Sales Support</h5>
+                            <p>
+                                Expert assistance whenever you need
+                                help with your solar system.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <a href="#contact" class="service-main-btn">
+                    Get Solar Service
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- BATTERY SERVICES -->
+
+        <div class="battery-services">
+
+            <div class="battery-content">
+
+                <span class="service-small-title">
+                    BATTERY SERVICES
+                </span>
+
+                <h3>
+                    Reliable Battery
+                    <span>Solutions</span>
+                </h3>
+
+                <p>
+                    We provide dependable battery solutions with
+                    proper installation, testing and maintenance
+                    support.
+                </p>
+
+
+                <div class="battery-points">
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Battery Installation
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Battery Testing
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Battery Maintenance
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Replacement Support
+                    </div>
+
+                </div>
+
+
+                <a href="#contact" class="battery-btn">
+                    Enquire Now
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="battery-image">
+
+                <img
+                    src="images/batt2.jpg"
+                    alt="Battery Service"
+                >
+
+                <div class="battery-floating-card">
+
+                    <i class="bi bi-battery-charging"></i>
+
+                    <div>
+                        <strong>Reliable Power</strong>
+                        <small>Expert Battery Support</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOTTOM CTA -->
+
+        <div class="services-cta">
+
+            <div>
+
+                <span>
+                    NEED PROFESSIONAL HELP?
+                </span>
+
+                <h3>
+                    Let's find the right energy solution for you.
+                </h3>
+
+            </div>
+
+            <a href="#contact">
+                Contact Us
+                <i class="bi bi-arrow-right"></i>
+            </a>
+
+        </div>
+
     </div>
 
-    <div class="row g-4">
-
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="bi bi-search"></i>
-          </div>
-          <h4>Site Survey & Design</h4>
-          <p>
-            We analyze your location and energy needs to create
-            the right solar system design.
-          </p>
-          <span>01</span>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="bi bi-tools"></i>
-          </div>
-          <h4>Professional Installation</h4>
-          <p>
-            Expert installation with quality components for safe
-            and efficient solar performance.
-          </p>
-          <span>02</span>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="bi bi-headset"></i>
-          </div>
-          <h4>Maintenance & Support</h4>
-          <p>
-            Regular maintenance and reliable after-sales support
-            to keep your solar system performing efficiently.
-          </p>
-          <span>03</span>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="service-bottom text-center">
-      <h3>Ready to Switch to Solar?</h3>
-      <a href="#contact">
-        Get Free Consultation <i class="bi bi-arrow-right"></i>
-      </a>
-    </div>
-
-  </div>
 </section>
 
 <!-- calculator  -->
@@ -1214,6 +1583,126 @@ P & T Area, Gadarian Purwa , Fazalganj Kanpur 208 012
         <i class="bi bi-telephone-fill" aria-hidden="true"></i>
     </a>
 </div>
+
+
+<script>
+
+const slides = document.querySelectorAll(".solar-slide");
+const dots = document.querySelectorAll(".dot");
+
+const nextBtn = document.getElementById("nextSlide");
+const prevBtn = document.getElementById("prevSlide");
+
+let currentSlide = 0;
+let autoSlide;
+
+
+/* Show Slide */
+
+function showSlide(index) {
+
+    slides.forEach(slide => {
+        slide.classList.remove("active");
+    });
+
+    dots.forEach(dot => {
+        dot.classList.remove("active");
+    });
+
+    slides[index].classList.add("active");
+    dots[index].classList.add("active");
+
+    currentSlide = index;
+}
+
+
+/* Next */
+
+function nextSlide() {
+
+    currentSlide++;
+
+    if (currentSlide >= slides.length) {
+        currentSlide = 0;
+    }
+
+    showSlide(currentSlide);
+}
+
+
+/* Previous */
+
+function previousSlide() {
+
+    currentSlide--;
+
+    if (currentSlide < 0) {
+        currentSlide = slides.length - 1;
+    }
+
+    showSlide(currentSlide);
+}
+
+
+/* Auto Slide */
+
+function startAutoSlide() {
+
+    autoSlide = setInterval(() => {
+        nextSlide();
+    }, 5000);
+
+}
+
+
+/* Reset Timer */
+
+function resetAutoSlide() {
+
+    clearInterval(autoSlide);
+
+    startAutoSlide();
+
+}
+
+
+/* Buttons */
+
+nextBtn.addEventListener("click", () => {
+
+    nextSlide();
+    resetAutoSlide();
+
+});
+
+
+prevBtn.addEventListener("click", () => {
+
+    previousSlide();
+    resetAutoSlide();
+
+});
+
+
+/* Dots */
+
+dots.forEach((dot, index) => {
+
+    dot.addEventListener("click", () => {
+
+        showSlide(index);
+        resetAutoSlide();
+
+    });
+
+});
+
+
+/* Start */
+
+startAutoSlide();
+
+</script>
 
 <script>
 

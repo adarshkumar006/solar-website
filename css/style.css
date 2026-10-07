@@ -1903,11 +1903,15 @@ html {
 .founder-image img {
   width: 100%;
   max-width: 400px;
-  height: 440px;
+  height: 430px;
   object-fit: cover;
+  object-position: center 20%;
   border-radius: 15px;
   box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  background: #f5f5f5;
 }
+
+
 
 .founder-label {
   color: #f59e0b;
